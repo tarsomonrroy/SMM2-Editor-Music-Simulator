@@ -9,13 +9,16 @@
 
 <body>
     <section class="main-section">
-        <h1>🎵 Music Layer System</h1>
+        <h1>🎵 SMM2 Editor Music Stems 🎵</h1>
 
-        <label>Nome base das músicas:</label>
-        <input type="text" id="baseName" placeholder="Ex: music"><br>
+        <label>All Musics Name:</label>
+        <input type="text" id="baseName" placeholder="Ex: athletic"><br>
 
-        <label>Ponto de loop (segundos):</label>
-        <input type="number" id="loopPoint" step="0.01" value="4"><br>
+        <label>Looping Point (secs):</label>
+        <input type="number" id="loopPoint" step="0.01" value="12.175"><br>
+
+        <label>Switching Time (secs):</label>
+        <input type="number" id="swapInterval" step="1" value="20"><br>
 
         <button onclick="start()">Play</button>
         <button onclick="stop()">Stop</button>
@@ -25,6 +28,8 @@
         <div id="progressContainer">
             <progress id="progressBar" max="100" value="0"></progress>
         </div>
+
+        <button onclick="toggleTheme()">Change Theme</button>
 
         <script src="script.js"></script>
     </section>
